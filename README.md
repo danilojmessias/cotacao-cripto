@@ -46,7 +46,7 @@ Caso não tenho acesso ao coinlib, é possivel utilizar o JSON que disponibilize
 
 Abra o caminho do projeto
 ```bash
-  cotacao\src\database
+  cotacao-cripto\src\database
 ```
 Instale o json server
 ```bash
