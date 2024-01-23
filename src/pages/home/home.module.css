@@ -1,0 +1,135 @@
+.container {
+  margin-top: 50px;
+  text-align: center;
+  margin: 0 14px;
+}
+.form {
+  width: 100%;
+  display: flex;
+  gap: 14px;
+}
+.form input {
+  width: 100%;
+  height: 44px;
+  border-radius: 30px;
+  outline: none;
+  border: 0px;
+  padding: 8px;
+}
+
+table {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: separate;
+  border-spacing: 0 14px;
+}
+
+.tr {
+  background-color: #32323f;
+}
+
+td:first-child,
+th:first-child {
+  border-radius: 8px 0 0 8px;
+}
+
+td:last-child,
+th:last-child {
+  border-radius: 0 8px 8px 0 ;
+}
+
+table th {
+  font-size: 14px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.tdLabel span {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.tdLabel,
+.tdProfit,
+.tdLoss {
+  color: #bbb;
+}
+
+.tdProfit {
+  color: #12f98a;
+}
+
+.tdLoss {
+  color: #f91257;
+}
+
+table th,
+table td {
+  padding: 14px;
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  table {
+    border: 0;
+  }
+  table thead {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    margin: -1px;
+    width: 1px;
+  }
+
+  .tr {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    margin-bottom: 14px;
+  }
+  table td {
+    border-bottom: 1px solid #1f1e1e;
+    display: block;
+    font-size: 14px;
+    text-align: right;
+  }
+
+  table td:last-child {
+    border-bottom: 0;
+  }
+
+  td:last-child,
+  th:last-child {
+    border-radius: 0;
+  }
+  td:first-child,
+  th:first-child {
+    border-radius: 0;
+  }
+  table td::before {
+    content: attr(data-label);
+    float: left;
+  }
+}
+.btn {
+  border-radius: 200px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+.btn:hover {
+  border-color: #646cff;
+}
+.btn:focus,
+.btn:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
